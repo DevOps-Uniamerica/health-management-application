@@ -63,7 +63,7 @@ export class RefeicaoFormComponent {
         this.usuarioService.getUser().subscribe(user => {
           // Verifica se as calorias são iguais ou superiores à meta de alimentação
           if (refeicao.calorias >= user.metaAlimentação) {
-            user.pontos += 10; // Adiciona 10 pontos
+            user.pontos += 1200; // Adiciona 10 pontos
           }
           // Adiciona o id da nova refeição ao array de refeições do usuário
           user.refeicoes.push(novaRefeicao.id);

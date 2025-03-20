@@ -9,9 +9,7 @@
       "produtos": [],
       "atividades": [],
       "refeicoes": [
-        "65f0",
-        "6628",
-        "9043"
+        "2e33"
       ]
     },
     {
@@ -68,13 +66,6 @@
       "nome": "refeicao",
       "descricao": "comida",
       "calorias": 1000,
-      "data": "2025-03-20T00:00:00.000Z"
-    },
-    {
-      "id": "6628",
-      "nome": "cogumelo de drogas do mario",
-      "descricao": "UonUonUon",
-      "calorias": 5000,
       "data": "2025-03-20T00:00:00.000Z"
     }
   ]
