@@ -3,6 +3,19 @@
     {
       "id": "1",
       "nome": "Fred P. P.",
+      "pontos": 10,
+      "metaAtividade": 0,
+      "metaAlimentação": 0,
+      "produtos": [],
+      "atividades": [],
+      "refeicoes": [
+        "65f0",
+        "6628"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Andrei Mai Velasco",
       "pontos": 0,
       "metaAtividade": 0,
       "metaAlimentação": 0,
@@ -43,17 +56,31 @@
   ],
   "refeicoes": [
     {
-      "id": "1",
-      "nome": "Arroz 20g",
-      "descricao": 1300,
-      "calorias": 0,
-      "data": null
-    },
-    {
       "id": "289b",
       "nome": "comida",
       "descricao": "comida boa",
       "calorias": 540,
+      "data": "2025-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "7091",
+      "nome": "refeicao",
+      "descricao": "comida",
+      "calorias": 1000,
+      "data": "2025-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "65f0",
+      "nome": "Cu de curioso",
+      "descricao": "guloso",
+      "calorias": 50000,
+      "data": "2025-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "6628",
+      "nome": "cogumelo de drogas do mario",
+      "descricao": "UonUonUon",
+      "calorias": 5000,
       "data": "2025-03-20T00:00:00.000Z"
     }
   ]
