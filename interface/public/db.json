@@ -1,18 +1,70 @@
 {
-    "usuarios": [
-        { "id": 1, "nome": "Fred P. P.", "pontos": 0, "metaAtividade": 0, "metaAlimentação": 0, "produtos": [], "atividades": [], "refeicoes": [] },
-        { "id": 2, "nome": "Andrei Mai Velasco", "pontos": 0, "metaAtividade": 0, "metaAlimentação": 0, "produtos": [], "atividades": [], "refeicoes": [] }
-    ],
-    "produtos": [
-        { "id": 1, "nome": "Laptop", "descricao": "Teste", "preco": 1200 },
-        { "id": 2, "nome": "Mouse", "descricao": "Teste 1", "preco": 1200 }
-    ],
-    "atividades": [
-        { "id": 1, "nome": "Corrida", "descricao": 1300, "temop": null, "data": null },
-        { "id": 2, "nome": "Musculação", "descricao": 50, "temop": null, "data": null }
-    ],
-    "refeicoes": [
-        { "id": 1, "nome": "Arroz 20g", "descricao": 1300, "calorias": 0, "data": null },
-        { "id": 2, "nome": "Torta Alemã", "descricao": 50, "calorias": 0, "data": null }
-    ]
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Fred P. P.",
+      "pontos": 0,
+      "metaAtividade": 0,
+      "metaAlimentação": 0,
+      "produtos": [],
+      "atividades": [],
+      "refeicoes": []
+    },
+    {
+      "id": "2",
+      "nome": "Andrei Mai Velasco",
+      "pontos": 0,
+      "metaAtividade": 0,
+      "metaAlimentação": 0,
+      "produtos": [],
+      "atividades": [],
+      "refeicoes": []
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Laptop",
+      "descricao": "Teste",
+      "preco": 1200
+    },
+    {
+      "id": "2",
+      "nome": "Mouse",
+      "descricao": "Teste 1",
+      "preco": 1200
+    }
+  ],
+  "atividades": [
+    {
+      "id": "1",
+      "nome": "Corrida",
+      "descricao": 1300,
+      "temop": null,
+      "data": null
+    },
+    {
+      "id": "2",
+      "nome": "Musculação",
+      "descricao": 50,
+      "temop": null,
+      "data": null
+    }
+  ],
+  "refeicoes": [
+    {
+      "id": "1",
+      "nome": "Arroz 20g",
+      "descricao": 1300,
+      "calorias": 0,
+      "data": null
+    },
+    {
+      "id": "289b",
+      "nome": "comida",
+      "descricao": "comida boa",
+      "calorias": 540,
+      "data": "2025-03-20T00:00:00.000Z"
+    }
+  ]
 }
