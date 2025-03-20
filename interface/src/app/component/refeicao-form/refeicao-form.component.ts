@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RefeicaoService } from '../../service/refeicao-service.service';
+import { UsuarioService } from '../../service/usuario.service';
 
 @Component({
   selector: 'app-refeicao-form',
@@ -39,6 +40,7 @@ export class RefeicaoFormComponent {
   constructor(
     private fb: FormBuilder,
     private refeicaoService: RefeicaoService,
+    private usuarioService: UsuarioService,
     private router: Router
   ) {
     this.refeicaoForm = this.fb.group({
@@ -54,10 +56,25 @@ export class RefeicaoFormComponent {
       const refeicao = this.refeicaoForm.value;
       // Converter a string da data para um objeto Date
       refeicao.data = new Date(refeicao.data);
-      this.refeicaoService.create(refeicao).subscribe(() => {
-        // Após salvar, redireciona para a lista de refeições
-        this.router.navigate(['/refeicoes']);
+  
+      // Cria a refeição
+      this.refeicaoService.create(refeicao).subscribe((novaRefeicao: any) => {
+        // Após criar a refeição, busca o usuário com id 1
+        this.usuarioService.getUser().subscribe(user => {
+          // Verifica se as calorias são iguais ou superiores à meta de alimentação
+          if (refeicao.calorias >= user.metaAlimentação) {
+            user.pontos += 10; // Adiciona 10 pontos
+          }
+          // Adiciona o id da nova refeição ao array de refeições do usuário
+          user.refeicoes.push(novaRefeicao.id);
+          // Atualiza o usuário no banco de dados
+          this.usuarioService.update(user).subscribe(() => {
+            // Redireciona para a lista de refeições
+            this.router.navigate(['/refeicoes']);
+          });
+        });
       });
     }
   }
+  
 }
