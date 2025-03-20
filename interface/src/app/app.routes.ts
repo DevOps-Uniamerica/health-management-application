@@ -4,6 +4,6 @@ import { RefeicaoFormComponent } from './component/refeicao-form/refeicao-form.c
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: 'refeicoes', pathMatch: 'full' },
-  { path: 'refeicoes', component: RefeicaoListComponent },
+  { path: 'refeicoes', component: RefeicaoListComponent, data: { nome: "Refeições" } },
   { path: 'nova-refeicao', component: RefeicaoFormComponent },
 ];
