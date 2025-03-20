@@ -3,14 +3,15 @@
     {
       "id": "1",
       "nome": "Fred P. P.",
-      "pontos": 10,
+      "pontos": 1210,
       "metaAtividade": 0,
       "metaAlimentação": 0,
       "produtos": [],
       "atividades": [],
       "refeicoes": [
         "65f0",
-        "6628"
+        "6628",
+        "9043"
       ]
     },
     {
@@ -29,13 +30,13 @@
       "id": "1",
       "nome": "Laptop",
       "descricao": "Teste",
-      "preco": 1200
+      "preco": 1
     },
     {
       "id": "2",
       "nome": "Mouse",
       "descricao": "Teste 1",
-      "preco": 1200
+      "preco": 1
     }
   ],
   "atividades": [
@@ -82,6 +83,13 @@
       "descricao": "UonUonUon",
       "calorias": 5000,
       "data": "2025-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "9043",
+      "nome": "minha pica",
+      "descricao": "grossa",
+      "calorias": 2000,
+      "data": "2025-03-19T00:00:00.000Z"
     }
   ]
 }
