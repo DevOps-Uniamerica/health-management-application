@@ -3,14 +3,26 @@
     {
       "id": "1",
       "nome": "Fred P. P.",
-      "pontos": 10,
+      "pontos": 1210,
       "metaAtividade": 0,
       "metaAlimentação": 0,
       "produtos": [],
       "atividades": [],
       "refeicoes": [
-        "2e33"
+        "65f0",
+        "6628",
+        "9043"
       ]
+    },
+    {
+      "id": "2",
+      "nome": "Andrei Mai Velasco",
+      "pontos": 0,
+      "metaAtividade": 0,
+      "metaAlimentação": 0,
+      "produtos": [],
+      "atividades": [],
+      "refeicoes": []
     }
   ],
   "produtos": [
@@ -18,13 +30,13 @@
       "id": "1",
       "nome": "Laptop",
       "descricao": "Teste",
-      "preco": 1200
+      "preco": 1
     },
     {
       "id": "2",
       "nome": "Mouse",
       "descricao": "Teste 1",
-      "preco": 1200
+      "preco": 1
     }
   ],
   "atividades": [
@@ -45,13 +57,6 @@
   ],
   "refeicoes": [
     {
-      "id": "1",
-      "nome": "Arroz 20g",
-      "descricao": 1300,
-      "calorias": 0,
-      "data": null
-    },
-    {
       "id": "289b",
       "nome": "comida",
       "descricao": "comida boa",
@@ -59,10 +64,17 @@
       "data": "2025-03-20T00:00:00.000Z"
     },
     {
-      "id": "2e33",
-      "nome": "Almoço",
-      "descricao": "Prato feito",
+      "id": "7091",
+      "nome": "refeicao",
+      "descricao": "comida",
       "calorias": 1000,
+      "data": "2025-03-20T00:00:00.000Z"
+    },
+    {
+      "id": "6628",
+      "nome": "cogumelo de drogas do mario",
+      "descricao": "UonUonUon",
+      "calorias": 5000,
       "data": "2025-03-20T00:00:00.000Z"
     }
   ]
