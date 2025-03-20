@@ -9,20 +9,14 @@
       "produtos": [],
       "atividades": [],
       "refeicoes": [
+<<<<<<< HEAD
         "65f0",
         "6628",
         "9043"
+=======
+        "2e33"
+>>>>>>> 4d041ad65509712ecd1c5af3840d5a0a72b7e4da
       ]
-    },
-    {
-      "id": "2",
-      "nome": "Andrei Mai Velasco",
-      "pontos": 0,
-      "metaAtividade": 0,
-      "metaAlimentação": 0,
-      "produtos": [],
-      "atividades": [],
-      "refeicoes": []
     }
   ],
   "produtos": [
@@ -57,6 +51,13 @@
   ],
   "refeicoes": [
     {
+      "id": "1",
+      "nome": "Arroz 20g",
+      "descricao": 1300,
+      "calorias": 0,
+      "data": null
+    },
+    {
       "id": "289b",
       "nome": "comida",
       "descricao": "comida boa",
@@ -64,11 +65,12 @@
       "data": "2025-03-20T00:00:00.000Z"
     },
     {
-      "id": "7091",
-      "nome": "refeicao",
-      "descricao": "comida",
+      "id": "2e33",
+      "nome": "Almoço",
+      "descricao": "Prato feito",
       "calorias": 1000,
       "data": "2025-03-20T00:00:00.000Z"
+<<<<<<< HEAD
     },
     {
       "id": "65f0",
@@ -90,6 +92,8 @@
       "descricao": "grossa",
       "calorias": 2000,
       "data": "2025-03-19T00:00:00.000Z"
+=======
+>>>>>>> 4d041ad65509712ecd1c5af3840d5a0a72b7e4da
     }
   ]
 }
