@@ -1,0 +1,44 @@
+<div class="container mt-4">
+  <h2>Minhas Atividades</h2>
+
+  <!-- Contador: X min / META min -->
+  <p>
+    {{ totalMinutos }} min / {{ usuario?.metaAtividade }} min
+  </p>
+
+  <table class="table table-striped" *ngIf="usuario?.atividades?.length > 0">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Tempo (min)</th>
+        <th>Data</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let atividade of usuario.atividades">
+        <td>{{ atividade.nome }}</td>
+        <td>{{ atividade.descricao }}</td>
+        <td>{{ atividade.tempo }}</td>
+        <td>{{ atividade.data | date:'shortDate' }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" (click)="editarAtividade(atividade.id)">
+            Editar
+          </button>
+          <button class="btn btn-danger btn-sm" (click)="removerAtividade(atividade.id)">
+            Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!usuario?.atividades?.length">
+    <p>Nenhuma atividade cadastrada ainda.</p>
+  </div>
+
+  <button class="btn btn-success" (click)="novaAtividade()">
+    Nova Atividade
+  </button>
+</div>
