@@ -9,8 +9,10 @@ export const appRoutes: Routes = [
   { path: '', redirectTo: 'refeicoes', pathMatch: 'full' },
   { path: 'refeicoes', component: RefeicaoListComponent, data: { nome: "Refeições" } },
   { path: 'nova-refeicao', component: RefeicaoFormComponent },
+  { path: 'produtos', component: ProdutosListComponent, data:   { nome: "Produtos" } },
+
   // Rotas para Atividades
-  { path: 'atividades', component: AtividadeListComponent },
+  { path: 'atividades', component: AtividadeListComponent,data:   { nome: "Atividades" } },
   { path: 'nova-atividade', component: AtividadeFormComponent },
   { path: 'editar-atividade/:id', component: AtividadeFormComponent }
 ];
