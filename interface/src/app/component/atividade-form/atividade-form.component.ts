@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AtividadeService } from '../../service/atividade.service';
+import { UsuarioService } from '../../service/usuario.service';
 
 @Component({
   selector: 'app-atividade-form',
@@ -39,6 +40,7 @@ export class AtividadeFormComponent {
   constructor(
     private fb: FormBuilder,
     private atividadeService: AtividadeService,
+    private usuarioService: UsuarioService,
     private router: Router
   ) {
     this.atividadeForm = this.fb.group({
@@ -55,9 +57,22 @@ export class AtividadeFormComponent {
       // Converter a data para ISO string para manter o padrão de armazenamento
       atividade.data = new Date(atividade.data).toISOString();
 
+      // Cria a atividade
       this.atividadeService.create(atividade).subscribe((novaAtividade: any) => {
-        // Após criar a atividade, redireciona para a lista de atividades
-        this.router.navigate(['/atividades']);
+        // Após criar a atividade, busca o usuário com id 1
+        this.usuarioService.getUser().subscribe(user => {
+          // Verifica se o tempo da atividade é maior ou igual à meta de atividade
+          if (atividade.tempo >= user.metaAtividade) {
+            user.pontos += 10; // Adiciona 10 pontos
+          }
+          // Adiciona o id da nova atividade ao array de atividades do usuário
+          user.atividades.push(novaAtividade.id);
+          // Atualiza o usuário no banco de dados
+          this.usuarioService.update(user).subscribe(() => {
+            // Redireciona para a lista de atividades
+            this.router.navigate(['/atividades']);
+          });
+        });
       });
     }
   }

@@ -3,14 +3,15 @@
     {
       "id": "1",
       "nome": "Fred P. P.",
-      "pontos": 10,
+      "pontos": 1220,
       "metaAtividade": 0,
       "metaAlimentação": 0,
       "produtos": [],
-      "atividades": [],
+      "atividades": [
+        "69a9"
+      ],
       "refeicoes": [
-        "65f0",
-        "6628"
+        "2e33"
       ]
     },
     {
@@ -29,13 +30,13 @@
       "id": "1",
       "nome": "Laptop",
       "descricao": "Teste",
-      "preco": 1200
+      "preco": 1
     },
     {
       "id": "2",
       "nome": "Mouse",
       "descricao": "Teste 1",
-      "preco": 1200
+      "preco": 1
     }
   ],
   "atividades": [
@@ -59,6 +60,13 @@
       "descricao": "sla",
       "tempo": 5,
       "data": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "69a9",
+      "nome": "Leg press",
+      "descricao": "perna",
+      "tempo": 10,
+      "data": "2025-03-19T00:00:00.000Z"
     }
   ],
   "refeicoes": [
@@ -74,20 +82,6 @@
       "nome": "refeicao",
       "descricao": "comida",
       "calorias": 1000,
-      "data": "2025-03-20T00:00:00.000Z"
-    },
-    {
-      "id": "65f0",
-      "nome": "Cu de curioso",
-      "descricao": "guloso",
-      "calorias": 50000,
-      "data": "2025-03-20T00:00:00.000Z"
-    },
-    {
-      "id": "6628",
-      "nome": "cogumelo de drogas do mario",
-      "descricao": "UonUonUon",
-      "calorias": 5000,
       "data": "2025-03-20T00:00:00.000Z"
     }
   ]
